@@ -140,7 +140,7 @@
         "cfp": "感谢 Cloudflare Pages 提供 AxolotlPackager 使用的服务器",
         "ghp": "感谢 GitHub Pages 提供 AxolotlPackager 使用的服务器",
         "vc": "感谢 Vercel 提供 AxolotlPackager 使用的服务器",
-        "la": "感谢 TurboWarp Packager 提供 AxolotlPackager 使用的大型静态资源",
+        "la": "感谢 TurboWarp Packager 提供 AxolotlPackager 使用的大型静态资源的下载地址",
         "importingInterface": "正在加载选项...",
         "networkError": "无法下载 {url}。请确保你已连接到互联网，并尝试禁用浏览器扩展。",
         "outdated": "这个版本的 AxolotlPackager 似乎已经过期。请刷新并重试。",
