@@ -225,7 +225,16 @@
       <a href="https://docs.turbowarp.org/packager">{$_('p4.documentation')}</a>
     </div>
     <div>
-      <a href="https://fosshost.org/">{$_('p4.fosshost')}</a>
+      <a href="https://pages.cloudflare.com/">{$_('p4.cfp')}</a>
+    </div>
+    <div>
+      <a href="https://pages.github.com/">{$_('p4.ghp')}</a>
+    </div>
+    <div>
+      <a href="https://vercel.com/">{$_('p4.vc')}</a>
+    </div>
+    <div>
+      <a href="https://packager.turbowarp.org/">{$_('p4.la')}</a>
     </div>
     <div>
       <SelectTheme />
