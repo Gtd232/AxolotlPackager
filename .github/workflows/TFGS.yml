@@ -1,0 +1,40 @@
+name: TFGS
+
+on:
+  push:
+    branches: [ develop ]
+  pull_request:
+    branches: [ develop ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14.x
+    - name: Clone
+      run: |
+        git clone https://github.com/Gtd232/AxolotlPackager
+    - name: Build
+      run: |
+        cd AxolotlPackager
+        npm install
+        npm run build
+        cd build
+        touch ./CNAME
+        echo "gh.packager.axolotleditor.gtrees.tk" > CNAME
+        cd ..
+        cd ..
+    - name: Upload
+      uses: crazy-max/ghaction-github-pages@v2.6.0
+      with:
+        build_dir: AxolotlPackager/build
+        target_branch: gh-pages
+        verbose: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.D }}
