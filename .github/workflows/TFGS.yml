@@ -25,7 +25,7 @@ jobs:
         cd AxolotlPackager
         npm install
         npm run build
-        cd build
+        cd dist
         touch ./CNAME
         echo "gh.packager.axolotleditor.gtrees.tk" > CNAME
         cd ..
@@ -33,7 +33,7 @@ jobs:
     - name: Upload
       uses: crazy-max/ghaction-github-pages@v2.6.0
       with:
-        build_dir: AxolotlPackager/build
+        build_dir: AxolotlPackager/dist
         target_branch: gh-pages
         verbose: true
       env:
