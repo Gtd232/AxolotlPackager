@@ -17,17 +17,17 @@
     "prepublishOnly": "npm run test && npm run build-node-prod && node src/build/nodejs/update-readme.js node",
     "postpublish": "node src/build/nodejs/update-readme.js restore"
   },
-  "author": "GarboMuffin",
-  "homepage": "https://github.com/TurboWarp/packager#readme",
+  "author": "GarboMuffin+Gtd232",
+  "homepage": "https://github.com/Gtd232/packager#readme",
   "keywords": [
     "scratch"
   ],
   "bugs": {
-    "url": "https://github.com/TurboWarp/packager/issues"
+    "url": "https://github.com/Gtd232/AxolotlPackager/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/TurboWarp/packager.git"
+    "url": "https://github.com/Gtd232/AxolotlPackager.git"
   },
   "funding": "https://github.com/sponsors/GarboMuffin",
   "license": "Apache-2.0",
@@ -58,7 +58,7 @@
     "scratch-render-fonts": "^1.0.0-prerelease.20210401210003",
     "scratch-storage": "git+https://github.com/TurboWarp/scratch-storage.git#develop",
     "scratch-svg-renderer": "git+https://github.com/TurboWarp/scratch-svg-renderer.git#develop",
-    "scratch-vm": "git+https://github.com/TurboWarp/scratch-vm.git#develop",
+    "scratch-vm": "git+https://github.com/Gtd232/AxolotlEditor-vm.git#develop",
     "style-loader": "^2.0.0",
     "svelte": "^3.44.3",
     "svelte-loader": "^3.1.2",
