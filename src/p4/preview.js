@@ -108,7 +108,7 @@ class Preview {
     if (canUseBlobWindow) {
       const url = URL.createObjectURL(new Blob([preview], {
         type: 'text/html'
-      })) + '#do-not-share-this-link-it-will-not-work-for-others';
+      })) + '#此链接是预览链接且在他人设备无法使用所以不要分享此链接给他人使用';
       this.window = window.open(url);
     } else {
       this.window = window.open('about:blank');
